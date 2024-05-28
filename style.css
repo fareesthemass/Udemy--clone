@@ -88,6 +88,15 @@ body{
     color: white;
     padding: 10px;
     border-radius: 30px;
+    border: #a435f0 solid 1px;
+}
+
+.categories p:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: white;
+    color: #a435f0;
+    border: #a435f0 solid 1px;
 }
 
 .sale--image{
@@ -102,6 +111,22 @@ body{
     position: absolute;
     left: 10%;
     top: 20%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .sale--image__flashsale__content{
