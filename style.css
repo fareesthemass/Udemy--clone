@@ -53,6 +53,14 @@ body{
    
 }
 
+.navbar--container__icons__hover{
+    cursor: pointer;
+}
+
+.navbar--container__icons__hover:hover{
+    text-decoration: underline;
+}
+
 .taggle{
     display: none;
 }
@@ -74,6 +82,11 @@ body{
 
 .mylearning{
     cursor: pointer;
+    
+}
+
+.mylearning:hover{
+    text-decoration: underline;
 }
 
 .mylearning:hover .mylearning__popup{
@@ -159,6 +172,15 @@ body{
     padding: 10px;
    
 }
+
+.course--card:hover{
+    animation-name: zoomin;
+    animation-duration: 1s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.5s;
+}
+
+
 .course--card img{
     width:100%;
     height:50%
@@ -230,6 +252,11 @@ body{
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+}
+
+.footer__hover:hover{
+    cursor: pointer;
+    color:grey
 }
 
 /* media queries */
